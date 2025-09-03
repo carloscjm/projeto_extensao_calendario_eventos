@@ -1,100 +1,54 @@
-Calendário Colaborativo de Eventos Comunitários
-Este projeto é um calendário web colaborativo focado na divulgação e organização de eventos comunitários. Ele foi desenvolvido como parte do curso de [Nome da Disciplina] na [Nome da sua Universidade/Faculdade].
+Marketplace de Pequenos Produtores
+Visão Geral do Projeto
+Este projeto é um marketplace focado em pequenos produtores, servindo como uma plataforma para que eles possam divulgar seus produtos e feiras de forma colaborativa. O sistema oferece funcionalidades para gerenciamento de perfis, listagem de itens e uma "timeline" social, incentivando a interação entre produtores e consumidores.
 
-Funcionalidades Principais
-Criação e Divulgação de Eventos: Qualquer pessoa da comunidade pode criar e divulgar eventos.
+🚀 Funcionalidades Principais
+O sistema será desenvolvido com as seguintes funcionalidades:
 
-Inscrição em Eventos: Os interessados podem se inscrever para participar dos eventos.
+Acesso e Autenticação
+Login: Acesso seguro para usuários cadastrados.
 
-Gestão de Itens para Venda: Dentro de cada evento, os participantes inscritos podem adicionar e gerenciar itens que pretendem vender, facilitando a organização de feiras ou bazares comunitários.
+Cadastro de Usuário: Novo usuário pode se registrar na plataforma.
 
-Visualização em Calendário: Os eventos podem ser visualizados de forma clara em um calendário.
+Gerenciamento de Produtores
+Listagem de Produtores: Visualização de todos os produtores cadastrados no marketplace.
 
-Filtragem de Eventos: Possibilidade de filtrar eventos por data, categoria, ou localização.
+Cadastro de Produtor: Produtores podem criar seus perfis.
 
-Tecnologias Utilizadas
-Frontend:
+Edição de Produtor: O produtor pode editar suas próprias informações de perfil, garantindo a exclusividade de acesso.
 
-[Nome da Tecnologia, ex: React, Vue.js, Angular]
+Gerenciamento de Produtos
+Listagem de Produtos: Visualização de todos os produtos disponíveis na plataforma.
 
-[Outras tecnologias, ex: HTML, CSS, JavaScript, Bootstrap]
+Detalhe do Produto: Exibição detalhada de um produto específico (descrição, preço, produtor, etc.).
 
-Backend:
+Cadastro de Produto: Produtores podem cadastrar seus produtos.
 
-[Nome da Tecnologia, ex: Node.js, PHP, Python com Django/Flask]
+Edição de Produto: O produto só pode ser editado pelo usuário que o cadastrou.
 
-[Outras tecnologias, ex: Express, Laravel]
+Timeline Social
+Timeline do Produtor: Uma timeline específica para cada produtor, onde eles podem compartilhar novidades e conteúdo.
 
-Banco de Dados:
+Cadastro de Post: Produtores podem criar posts na sua timeline.
 
-[Nome do Banco, ex: MySQL, PostgreSQL, MongoDB]
+Reação a um Post: Usuários podem reagir (curtir, amar, etc.) aos posts.
 
-Outros:
+Comentário em um Post: Usuários podem deixar comentários nos posts.
 
-[Tecnologias de gerenciamento de pacotes, ex: npm, yarn]
+🛠️ Tecnologias Sugeridas
+Backend: Node.js com um framework como Express.js ou Fastify para as APIs REST.
 
-[Ferramentas de build, ex: webpack, Vite]
+Banco de Dados: MySQL para gerenciar os dados relacionais de usuários, produtores e produtos.
 
-Como Rodar o Projeto
-Pré-requisitos
-Certifique-se de ter instalado em sua máquina:
+Gerenciamento de Mensageria/Eventos: Kafka para processamento assíncrono de eventos, como envio de notificações ou atualizações na timeline.
 
-[Nome da primeira tecnologia, ex: Node.js, versão mínima X.X.X]
+Cache: Redis para caching de dados frequentemente acessados (ex: produtos mais vistos, timeline de produtores).
 
-[Nome da segunda tecnologia, ex: PHP, versão mínima X.X.X]
+Conteinerização: Docker para padronizar e isolar o ambiente de desenvolvimento e produção, facilitando o deploy.
 
-[Outros pré-requisitos, ex: Docker, Composer]
+Controle de Versão: Git para gerenciar o código-fonte.
 
-Instalação e Execução
-Clone este repositório para sua máquina local:
-git clone https://docs.github.com/pt/repositories/creating-and-managing-repositories/about-repositories
+Metodologia de Trabalho: Scrum para gestão ágil do projeto, garantindo entregas contínuas e alinhamento com os requisitos.
 
-Navegue até o diretório do projeto:
-cd [nome-do-diretorio]
-
-Instale as dependências do backend:
-[comando de instalação do backend, ex: composer install]
-
-Configure as variáveis de ambiente. Crie um arquivo .env com base no arquivo .env.example e preencha as informações necessárias do banco de dados e outras chaves de API.
-
-Execute as migrações do banco de dados:
-[comando de migração, ex: php artisan migrate]
-
-Instale as dependências do frontend:
-cd frontend
-[comando de instalação do frontend, ex: npm install ou yarn install]
-
-Volte para a pasta principal e inicie o servidor do backend:
-cd ..
-[comando para iniciar o servidor do backend, ex: php artisan serve]
-
-Em um novo terminal, inicie o servidor de desenvolvimento do frontend:
-cd frontend
-[comando para iniciar o servidor do frontend, ex: npm start ou npm run dev]
-
-O projeto estará disponível em http://localhost:[porta].
-
-Estrutura de Diretórios
-.
-├── backend/
-│   ├── app/
-│   ├── database/
-│   ├── routes/
-│   ├── .env.example
-│   ├── composer.json
-│   └── ...
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   └── assets/
-│   ├── public/
-│   └── package.json
-├── .gitignore
-├── README.md
-└── ...
-Contribuidores
-[Seu nome ou nome do grupo] - [Seu papel no projeto, ex: Desenvolvedor Principal]
-
-Licença
-Este projeto está sob a licença [Nome da Licença, ex: MIT]. Veja o arquivo LICENSE para mais detalhes.
+⚙️ Como Rodar o Projeto (Instruções Futuras)
+git clone <URL_DO_REPOSITORIO>
